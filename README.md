@@ -18,7 +18,7 @@ Nicholas Cage gives you advice
 
 ## HTML elements to DOM-grab
 
-- put each element for each state in a big <div>, then apply `hide` and `show` classes to the divs containing elements for each state; the changes will cascade down
-- <p> containing cage's response
+- put each element for each state in a big `<div>`, then apply `hide` and `show` classes to the divs containing elements for each state; the changes will cascade down
+- `<p>` containing cage's response
 - buttons
-- <input> for user entered text
+- `<input>` for user entered text
