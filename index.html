@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>hope you brought the declaration of independence</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/cage.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <h1>Cagesay</h1>
+        </header>
 
-</head>
+        <main>
+            <!-- question entry state -->
+            <section class="show">
+                <h3>Ask Nicholas Cage a question</h3>
+                <input id="userQuestionInputBox" type="text" />
+                <br /><br />
+                <button id="submitButton" type="button">Ask him</button>
+            </section>
 
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+            <!-- Cage answer state -->
+            <section class="hide">
+                <h3>Nicholas Cage says:</h3>
+                <div class="cageAnswer">
+                    <img src="https://www.placecage.com/100/100" alt="image of Nicholas Cage" />
+                    <p id="cageAnswerText">if you're seeing this sentence something went wrong</p>
+                </div>
+                <br />
+                <button id="retryButton" type="button">Ask again?</button>
+            </section>
+        </main>
+    </body>
 </html>
